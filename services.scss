@@ -1,0 +1,99 @@
+@import "_colors.scss";
+.main {
+    color: black;
+    h4 {
+        font-size: 28px;
+        padding-bottom: 4px;
+        font-weight: 600;
+        &:after {
+            content: "";
+            display: block;
+            margin-top: 20px;
+            border-bottom: 1px solid $secondary;
+            width: 200px;
+        }
+    }
+}
+
+.section {
+    padding-top: 50px;
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    img {
+        height: 250px;
+        margin-top: 35px;
+        padding-right: 55px;
+        margin-bottom: 30px;
+        float: left;
+    }
+    p {
+        font-size: 20px;
+    }
+    .icon {
+        position: absolute;
+        color: white;
+        background-color: $secondary;
+        font-size: 46px;
+        border-radius: 50%;
+        margin-left: 386px;
+    }
+    .home {
+        padding: 17px 24px;
+    }
+    .wrench {
+        padding: 16px 26px;
+    }
+    .gears {
+        padding: 17px 22px;
+    }
+    .hammer {
+        padding: 16px 24px;
+    }
+}
+
+.section-right {
+    padding-top: 20px;
+    text-align: right;
+    img {
+        float: right;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    .icon {
+        margin-left: 442px;
+    }
+}
+
+.nav_element_services {
+    background-color: $primary;
+    p {
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-right {
+        .icon {
+            margin-left: 625px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .section-right {
+        .icon {
+            margin-left: 200px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .section-right {
+        .icon {
+            margin-left: 18px;
+        }
+    }
+}
